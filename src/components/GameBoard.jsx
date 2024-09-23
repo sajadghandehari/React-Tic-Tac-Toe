@@ -18,12 +18,6 @@ export default function GameBoard() {
     });
   }
 
-  function handleSelectSquare(rowIndex, colIndex) {
-    setGameBoard((prevGameBoard) => {
-      prevGameBoard[rowIndex][colIndex] = "X";
-      return updatedBoard;
-    });
-  }
   return (
     <ol id="game-board">
       {gameBoard.map((row, rowIndex) => (
