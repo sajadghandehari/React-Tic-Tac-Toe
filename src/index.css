@@ -349,3 +349,30 @@ ol {
     transform: scale(1);
   }
 }
+
+@media (max-width: 600px) {
+  #game-container {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  #players {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #players li {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  #game-board button {
+    width: 5.2rem;
+    height: 5.2rem;
+    font-size: 3rem;
+  }
+  body {
+    min-height: 80rem;
+  }
+}
